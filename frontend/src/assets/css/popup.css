@@ -1,0 +1,126 @@
+/* info
+   ========================================================================== */
+/**
+ * 1. Writer: Yeji Yu. (Weaverloft Corp.)
+ * 2. Production Date: 2022-03-28
+ * 3. Client: AmorePacific III
+ */
+
+/* Modal Popup
+========================================================================== */
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 300ms 100ms;
+}
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+    transition: 300ms;
+}
+.modal-wrap {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 30.000em;
+    max-height: 80vh;
+    margin-top: -1.500em;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    transition: 300ms;
+}
+.modal.open .modal-wrap {
+    opacity: 1;
+    margin-top: 0;
+    transition: 300ms 100ms;
+}
+.modal-content {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 26px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0.375em;
+}
+.modal-tit-wrap {
+    padding: 1.500em 0 11px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1461A5;
+}
+.modal-tit-wrap.noBottom {
+    border-bottom: 0;
+}
+.modal-tit {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+.modal-cont-wrap {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 65vh;
+    margin: 0 -26px;
+    padding: 18px 26px 2.5em;
+    box-sizing: border-box;
+}
+.modal-cont-wrap2 {
+    padding-top: 2.000em;
+}
+.modal .cont-input-tit {
+    margin-bottom: 9px;
+}
+.modal .cont-input-wrap {
+    margin-top: 1em;
+}
+.modal .cont-input-wrap:last-of-type {
+    margin-bottom: 0;
+}
+.modal .btn-wrap {
+    margin-top: 2.500em;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 27px;
+}
+.modal-close-btn a {
+    opacity: 1;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/pop-close-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    text-indent: -9999px;
+}
+.modal-close-btn a:hover {
+    opacity: 0.8;
+}
+
+.modal.msg .modal-content {
+    padding-top: 50px;
+}
+.modal.msg .modal-cont-wrap {
+    text-align: center;
+}
+.modal.msg .modal-cont-wrap .tit {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.modal.msg .modal-cont-wrap .txt {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #666;
+}

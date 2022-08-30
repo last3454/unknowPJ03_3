@@ -1,0 +1,31 @@
+{
+  "name": "unknwonpj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@bundled-es-modules/axios": "^0.27.2",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.2.0",
+    "js-sha512": "^0.8.0",
+    "popper.js": "^1.16.1",
+    "swiper": "^8.3.2",
+    "vue": "^3.2.37",
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-router": "^4.1.2",
+    "vuex": "^4.0.2",
+    "vuex-composition-helpers": "^2.0.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "prettier": "2.7.1",
+    "vite": "^3.0.0"
+  }
+}

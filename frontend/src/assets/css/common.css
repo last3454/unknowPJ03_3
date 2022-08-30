@@ -1,0 +1,14 @@
+.btn.typeB:hover {
+  background-color: #0a58ca;
+}
+
+.btn-wrap .btn:last-child {
+  margin-right: 0;
+}
+.btn-wrap .btn:first-child {
+  margin-left: 0;
+}
+.btn.typeB {
+  background-color: #0b5ed7;
+  color: #fff;
+}
